@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+
+:root {
+    --color-light-50: #f8fafc;
+
+    --color-dark-50: #797984;
+    --color-dark-100: #312d37;
+    --color-dark-900: #000;
+
+    --color-purple-50: #402058;
+    --color-purple-100: #a855f7;
+    --color-purple-200: #bf46ef;
+
+    --color-gradient: linear-gradient(
+        90deg,
+        var(--color-purple-50),
+        var(--color-purple-100),
+        var(--color-purple-200)
+    );
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    background-color: var(--color-dark-100);
+    color: var(--color-light-50);
+}
+
+.container {
+}
+
+.image-logo {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    max-width: 100%;
+}
+
+div > img {
+    max-width: 100px;
+    margin-left: 20px;
+    border-radius: 50%;
+    border: 1px solid blueviolet;
+}
+
+div > i {
+    color: white;
+    margin-top: 30px;
+    margin-right: 30px;
+}
+
+#mode-icon {
+    cursor: pointer;
+    font-size: 20px;
+}
+
+nav {
+    text-align: center;
+    display: block;
+    margin: auto;
+}
+
+.menu {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin: auto;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+nav > a {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    background: var(--color-gradient);
+    border-radius: 5px;
+    color: var(--color-light-50);
+    padding: 5px;
+    margin-right: 20px;
+    text-decoration: none;
+    border: 1px;
+}
+
+nav > a:hover {
+    border-radius: 5px;
+    background-color: #797984;
+    color: var(--color-dark-900);
+}
+
+header > h1,
+h2 {
+    text-align: center;
+    display: block;
+    margin: auto;
+    min-width: 300px;
+    max-width: 800px;
+}
+header p {
+    text-align: center;
+}
+
+header > img {
+    max-width: 100px;
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+}
+
+main {
+    padding: 0px 50px;
+    text-align: justify;
+    margin: auto;
+    margin-top: 100px;
+    min-width: 300px;
+    max-width: 800px;
+}

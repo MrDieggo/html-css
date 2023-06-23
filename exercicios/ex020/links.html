@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Link</title>
+        <style>
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            a {
+                color: rgb(39, 39, 247);
+                text-decoration: none;
+                font-weight: bold;
+            }
+
+            a:visited {
+                color: blueviolet;
+            }
+
+            a::after {
+                content: " [link]";
+                text-decoration: none;
+                font-weight: normal;
+                color: gray;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Personalizando Links</h1>
+        <ul>
+            <li><a href="github.com/MrDieggo">Repositorio GitHub</a></li>
+            <li><a href="https://www.twitch.tv/mrdieggo">Twitch</a></li>
+            <li>
+                <a
+                    href="https://www.youtube.com/channel/UCoyedbXXem-R_Xvrinkk4oA"
+                    >Site</a
+                >
+            </li>
+        </ul>
+    </body>
+</html>
