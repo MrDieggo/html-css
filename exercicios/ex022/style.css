@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div.quadrado{
+    border: 1px solid black;
+    width: 300px;
+    height: 300px;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 10px;
+    display: inline-block;
+    background-color: lightgray;
+}
+
+div#quad1{
+    background-color: skyblue;
+}
+
+div#quad2{
+    background-image: linear-gradient(black, rgb(153, 31, 127),orange);
+}
+
+div#quad3{
+    background-image: url(imagens/pattern001.png);
+}
