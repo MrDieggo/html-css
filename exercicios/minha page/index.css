@@ -22,20 +22,21 @@
 * {
     margin: 0;
     padding: 0;
-    border: 0;
+    box-sizing: border-box;
     font-family: "Roboto", sans-serif;
 }
 
 body {
     background-color: var(--color-dark-100);
     color: var(--color-light-50);
+    height: 100vh;
 }
 
-.container {
+.container{
+    background-color: #160a16;
 }
 
 .image-logo {
-    background-color: black;
     display: flex;
     justify-content: space-between;
     padding-top: 40px;
@@ -61,64 +62,66 @@ div > i {
     font-size: 20px;
 }
 
-nav {
-    text-align: center;
-    display: block;
-    margin: auto;
-}
-
-.menu {
+.btn-menu{
+    margin-top: 1.5rem;
+    
     display: flex;
-    align-content: center;
     justify-content: center;
-    margin: auto;
-    border: 1px solid transparent;
-    border-radius: 10px;
-    margin: 20px;
+    gap: 1rem;
 }
 
-nav > a {
-    font-family: "Roboto", sans-serif;
+.btn{
+    padding: 0.75rem 1.5rem;
+    color: aliceblue;
+    background-color: #a855f7;
+    border-radius: 62.4375rem;
     font-weight: 500;
-    background: var(--color-gradient);
-    border-radius: 5px;
-    color: var(--color-light-50);
-    padding: 5px;
-    margin-right: 20px;
+    line-height: 140%;
+    text-transform: uppercase;
     text-decoration: none;
-    border: 1px;
 }
 
-nav > a:hover {
-    border-radius: 5px;
-    background-color: #797984;
-    color: var(--color-dark-900);
+.btn:hover{
+    background-color: #443044;
+    animation-duration: 2000ms;
 }
 
-header > h1,
-h2 {
-    text-align: center;
-    display: block;
-    margin: auto;
-    min-width: 300px;
-    max-width: 800px;
-}
-header p {
-    text-align: center;
+
+
+#name{
+    display: flex;
+    justify-content: center;
 }
 
-header > img {
-    max-width: 100px;
-    border-radius: 50%;
-    display: block;
-    margin: auto;
+main{
+    display: flex;
 }
 
-main {
-    padding: 0px 50px;
-    text-align: justify;
-    margin: auto;
-    margin-top: 100px;
-    min-width: 300px;
-    max-width: 800px;
+#cx-sobre{
+    display: flex;
+    flex-direction: column;
+    background-color: #000;
+    
+    justify-content: center;
+    align-items: center;
+
+    width: 44%;
+    margin: 1rem 0 0 5px;
+    padding: 15px 15px 15px 15px;
+    border-radius: 12px;
 }
+
+#cx-sobre>img{
+    display: flex;
+    flex-direction: row;
+}
+
+#cx-proj{
+    background-color: #160a16;
+}
+
+/*.imag{
+    display: flex;
+    max-width: 500px;
+    max-height: 500px;
+}*/
